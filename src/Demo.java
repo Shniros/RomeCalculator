@@ -11,7 +11,7 @@ public class Demo {
             Calculator calc = new Calculator(rs.isRomeNumbers());
             String ansLine = calc.getResult(rs.nextNumber(),rs.nextOperation(),rs.nextNumber());
 
-            System.out.println("Result: " + ansLine);
+            System.out.println(ansLine);
         } catch (Exception e) {
             e.printStackTrace();
         }
