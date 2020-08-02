@@ -15,6 +15,7 @@ public class ReadString {
 
         public ReadString(String arline) throws Exception {
             String curNumber = "";
+            //если пробел нежелательный символ, то просто убрать первый if
             for(char c:arline.toCharArray())
             {
                 if(String.valueOf(c).equals(" ")){
