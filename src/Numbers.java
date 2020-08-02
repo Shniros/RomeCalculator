@@ -35,6 +35,8 @@ public class Numbers {
         FileInputStream apInput  = new FileInputStream("ans.properties");
         ansProperties.load(apInput);
         romeProperties.load(rpInput);
+        apInput.close();
+        rpInput.close();
     }
     public String ConvertToRome(String number){
         return String.valueOf(ansProperties.get(number));
@@ -49,7 +51,7 @@ public class Numbers {
         }
     }
     private void loadArabicNumbers(int size){
-        for(int i = 0; i <= size;i++){
+        for(int i = 1; i <= size;i++){
             arabicMap.put(String.valueOf(i),i);
         }
     }
